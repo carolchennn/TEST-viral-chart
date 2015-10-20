@@ -1,0 +1,499 @@
+<html>
+<head>
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+<style>
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+
+#viralheader{
+	width:642px;
+	float:left;
+	border-bottom: 1px solid #d3d3d3;
+	padding-bottom:5px;
+	margin-bottom: 10px;
+}
+
+#header-first{
+float:left;
+width:420px;
+text-align:left;
+font-size:25px;
+font-family:'Arial Narrow', Arial, sans-serif;
+font-weight: 700;
+padding-top: 2px;
+}
+
+#header-second{
+float:left;
+font-size:17px;
+font-family:'Arial Narrow', Arial, sans-serif;
+font-weight: 500;
+padding-top: 5px;
+}
+
+#header-third img{
+width:20%;
+float:left;
+padding-left:10px;
+}
+
+#viralrow{
+	width:642px;
+	float:left;
+	padding-top:10px;
+}
+
+#viralrank{
+float:left;
+width:34px;
+}
+
+#viraldetails{
+float:left;
+width:450px;
+}
+
+#viralthumb{
+float:left;
+}
+
+#viralthumbbg img{
+width:150px;
+}
+
+#viralbody {
+font-family:Helvetica,verdana,sans-serif;
+}
+
+#playbutton{
+position:relative;
+top:-75px;
+left:43px;
+z-index:1;
+}
+
+#viralfirstrow{
+	float:left;
+	border-bottom: 1px solid #3d3d3d;
+	padding-bottom: 6px;
+	margin-bottom:6px;
+}
+
+#viraltitle{
+	float:left;
+	width:370px;
+	font-size:20px;
+	line-height:1.3em;
+}
+
+#viralpercent{
+	float:left;
+	color:#00a0df;
+	font-size:20px;
+	line-height:1.3em;
+}
+
+#viralsecondrow{
+	float:left;
+}
+
+#viralsecondrowone{
+	float:left;
+	width:220px;
+	font-weight: 300;
+	font-size:15px;
+	line-height:1.5em;
+}
+
+#viralsecondrowtwo{
+	float:left;
+	font-weight: 300;
+	font-size:15px;
+	line-height:1.5em;
+}
+
+#viralbrand{
+	color:#00a0df;
+	font-weight:400;
+}
+
+#viralrank{
+	color:#00a0df;
+	font-size:35px;
+	font-weight:700;
+	padding-left:8px;
+}
+
+ @media only screen and (min-width : 479px) and (max-width : 768px) {
+#viralrank{
+float:left;
+width:30px;
+font-size:30px;
+padding-left:0px;
+}
+
+#viralfirstrow{
+	padding-bottom: 5px;
+}
+
+#viraltitle{
+	width:190px;
+	font-size: 14px;
+	line-height:1.3em;
+}
+
+#viralpercent{
+	font-size:15px;
+	line-height:1.3em;
+	padding-left: 10px;
+}
+
+#viralsecondrowone{
+	font-size: 13px;
+	float:none;
+
+}
+
+#viralsecondrowtwo{
+font-size:13px;
+float:none;
+}
+
+#viralsecondrow{
+	float:none;
+}
+
+#viraldetails{
+width:250px;
+}
+
+#header-third img{
+	width:28%;
+}
+
+#header-second{
+	font-size:14px;
+}
+
+#header-first{
+	width:230px;
+	font-size:20px;
+}
+
+#viralheader{
+	width:430px;
+}
+
+ }
+
+ @media only screen and (max-width : 478px){
+
+#viralrank{
+float:left;
+width:20px;
+font-size:20px;
+padding-left:0px;
+}
+
+#viralfirstrow{
+	padding-bottom: 5px;
+	float:none;
+	margin-bottom: 2px;
+}
+
+#viraltitle{
+	width:160px;
+	font-size: 12px;
+	padding-bottom: 2px;
+	float:none;
+	line-height:1.2em;
+}
+
+#viralpercent{
+	font-size:12px;
+	float:none;
+	line-height:1.3em;
+}
+
+#viralsecondrowone{
+	font-size: 12px;
+	float:none;
+	width:220px;
+	line-height:1.4em;
+
+}
+
+#viralsecondrowtwo{
+font-size:12px;
+float:none;
+line-height:1.4em;
+}
+
+#viralsecondrow{
+	float:none;
+}
+
+#viraldetails{
+width:160px;
+}
+
+#header-third img{
+	width:30%;
+}
+
+#header-second{
+	font-size:11px;
+}
+
+#header-first{
+	width:150px;
+	font-size:17px;
+}
+
+	 /* This adds padding from top and bottom */
+	 .custom-popup .mfp-container {
+		 padding-top: 40px;
+		 padding-bottom: 40px;
+	 }
+	 /* This adds max-width to popup content */
+	 .custom-popup .mfp-content {
+		 width: 100%;
+		 max-width: 700px;
+	 }
+
+	 /* This makes "#popup-with-something" scale down proportionally */
+	 .custom-popup {
+		 width: 100%;
+		 height: 0;
+		 overflow: hidden;
+		 /* This is scale ratio */
+		 padding-top: 56.25%;
+	 }
+	 /* This is an element itself */
+	 .custom-content {
+		 background: #EBE8E8;
+		 position: absolute;
+		 top: -3px;
+		 left: 0;
+		 width: 100%;
+		 height: 100%;
+		 box-shadow: 0 0 8px rgba(0, 0, 0, .6);
+	 }
+
+
+#viralthumb {
+	padding-left: 10px;
+}
+
+#vralrow{
+	width:400px;
+}
+
+#viralthumbbg img{
+	width:120px;
+}
+
+#playbutton{
+top:-70px;
+left:30px;
+}
+
+#viralheader{
+	width:310px;
+}
+
+
+
+
+ }
+
+
+</style>
+</head>
+
+<body>
+
+<div id="viralchart">
+
+<div id="viralheader">
+<div id="header-first">Viral Video Chart</div>
+<div id="header-second">Powered by: </div>
+<div id="header-third"><img src="http://gaia.adage.com/images/bin/image/VMClogo20151010.jpg"></div>
+</div>
+
+<div id="viralbody">
+<div id="viralrow">
+<div id="viralrank">1</div>
+<div id="viraldetails">
+<div id="viralfirstrow">
+<div id="viraltitle">BLAHBLAHBLAH YOUTUBE test</div>
+<div id="viralpercent">88%</div>
+</div>
+<div id="viralsecondrow">
+<div id="viralsecondrowone">
+<div id="viralbrand">blahblah</div>
+<div id="viralagency">BBDO</div>
+</div>
+<div id="viralsecondrowtwo">
+<div id="viralview">Views this week: 21,113,505</div>
+<div id="viralspot">Spot last week: 2</div>
+</div>
+</div>
+</div>
+<div id="viralthumb">
+<div id="viralthumbbg"><a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><img src="http://img.youtube.com/vi/0O2aH4XLbto/mqdefault.jpg"></a></div>
+<div id="playbutton"><a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><img src="http://adage.com/scripts/edit/style/images/play_button.png"></a></div>
+</div>
+</div>
+</div>
+
+
+<div id="viralbody">
+<div id="viralrow">
+<div id="viralrank">2</div>
+<div id="viraldetails">
+<div id="viralfirstrow">
+<div id="viraltitle">BLAHBLAHBLAH FB Test</div>
+<div id="viralpercent">88%</div>
+</div>
+<div id="viralsecondrow">
+<div id="viralsecondrowone">
+<div id="viralbrand">blahblah</div>
+<div id="viralagency">BBDO</div>
+</div>
+<div id="viralsecondrowtwo">
+<div id="viralview">Views this week: 21,113,505</div>
+<div id="viralspot">Spot last week: 2</div>
+</div>
+</div>
+</div>
+<div id="viralthumb">
+<div id="viralthumbbg"><a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><img src="https://graph.facebook.com/10153187397833511/picture"></a></div>
+<div id="playbutton"><a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><img src="http://adage.com/scripts/edit/style/images/play_button.png"></a></div>
+</div>
+</div>
+</div>
+
+
+	<div id="viralbody">
+		<div id="viralrow">
+			<div id="viralrank">2</div>
+			<div id="viraldetails">
+				<div id="viralfirstrow">
+					<div id="viraltitle">BLAHBLAHBLAH FB Test</div>
+					<div id="viralpercent">88%</div>
+				</div>
+				<div id="viralsecondrow">
+					<div id="viralsecondrowone">
+						<div id="viralbrand">blahblah</div>
+						<div id="viralagency">BBDO</div>
+					</div>
+					<div id="viralsecondrowtwo">
+						<div id="viralview">Views this week: 21,113,505</div>
+						<div id="viralspot">Spot last week: 2</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="viralthumb">
+				<div id="viralthumbbg"><a href="#xyz" class="popup-facebook"><img src="https://graph.facebook.com/10153187397833511/picture"></a></div>
+				<div id="playbutton"><a href="#xyz" class="popup-facebook"><img src="http://adage.com/scripts/edit/style/images/play_button.png"></a></div>
+			</div>
+
+
+			<div id="xyz" class="custom-popup mfp-hide">
+				<div class="custom-content">
+					<div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-video" data-allowfullscreen="1" data-href="https://www.facebook.com/verizon/videos/10156077450615123/"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/verizon/videos/10156077450615123/"><a href="https://www.facebook.com/verizon/videos/10156077450615123/"></a><p>Verizon customers, why not time travel using your smartphone? Request a ride from 1985 with Verizon using the Lyft app here for iOS: http://vz.to/1RklxvX or here for Android: http://vz.to/1PCc0lA. Starting 10/21 in NYC #WhyNotWednesdayData usage applies.</p>Posted by <a href="https://www.facebook.com/verizon">Verizon</a> on Monday, October 19, 2015</blockquote></div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="viralbody">
+		<div id="viralrow">
+			<div id="viralrank">2</div>
+			<div id="viraldetails">
+				<div id="viralfirstrow">
+					<div id="viraltitle">BLAHBLAHBLAH FB Test</div>
+					<div id="viralpercent">88%</div>
+				</div>
+				<div id="viralsecondrow">
+					<div id="viralsecondrowone">
+						<div id="viralbrand">blahblah</div>
+						<div id="viralagency">BBDO</div>
+					</div>
+					<div id="viralsecondrowtwo">
+						<div id="viralview">Views this week: 21,113,505</div>
+						<div id="viralspot">Spot last week: 2</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="viralthumb">
+				<div id="viralthumbbg"><a href="#abc" class="popup-facebook"><img src="https://graph.facebook.com/10153187397833511/picture"></a></div>
+				<div id="playbutton"><a href="#abc" class="popup-facebook"><img src="http://adage.com/scripts/edit/style/images/play_button.png"></a></div>
+			</div>
+
+
+			<div id="abc" class="custom-popup mfp-hide">
+				<div class="custom-content">
+					<div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-video" data-allowfullscreen="1" data-href="/sprint/videos/vb.8389383510/10153204122173511/?type=3"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/sprint/videos/10153204122173511/"><a href="https://www.facebook.com/sprint/videos/10153204122173511/"></a><p>iPhone Forever is the world’s best offer. Getting iPhone 6s and upgrading to a new iPhone every year has people talking. http://sprint.co/1j06tIN</p>Posted by <a href="https://www.facebook.com/sprint">Sprint</a> on Thursday, October 8, 2015</blockquote></div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+<script>
+
+$(document).ready(function() {
+	$('.popup-youtube').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+		fixedContentPos: false
+	});
+
+	$('.popup-facebook').magnificPopup({
+		type:'inline',
+		midClick: true,
+		mainClass: 'custom-popup'
+	});
+});
+
+
+
+</script>
+</body>
+</html>
